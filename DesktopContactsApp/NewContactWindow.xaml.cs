@@ -41,6 +41,7 @@ namespace DesktopContactsApp
 
             SQLiteConnection connection = new SQLiteConnection(databasePath);
             connection.CreateTable<Contact>();
+            connection.Insert(contact);
 
             Close();
         }
